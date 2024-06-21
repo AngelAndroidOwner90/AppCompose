@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="gm_api_key" templateMergeStrategy="preserve" translatable="false">
+        AIzaSyCmsaptLhcq2prH1LeUhNvnmaRR9Kz3jIg
+    </string>>
+
+    <string name="gm_ors_api_key" templateMergeStrategy="preserve" translatable="false">
+        5b3ce3597851110001cf62486fff4116cb6944f9b1d8508797639d55
+    </string>>
+
+</resources>

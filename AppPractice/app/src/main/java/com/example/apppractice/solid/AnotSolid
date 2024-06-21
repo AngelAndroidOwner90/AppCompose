@@ -1,0 +1,104 @@
+
+
+Estos principios se llamaron S.O.L.I.D. por sus siglas en inglés:
+
+S: Single responsibility principle o Principio de responsabilidad única
+O: Open/closed principle o Principio de abierto/cerrado
+L: Liskov substitution principle o Principio de sustitución de Liskov
+I: Interface segregation principle o Principio de segregación de la interfaz
+D: Dependency inversion principle o Principio de inversión de dependencia
+Aplicar estos principios facilitará mucho el trabajo, tanto propio como ajeno (es muy probable que
+tu código lo acabe leyendo muchos otros desarrolladores a lo largo de su ciclo de vida).
+Algunas de las ventajas de aplicarlo son:
+
+Mantenimiento del código más fácil y rápido
+Permite añadir nuevas funcionalidades de forma más sencilla
+Favorece una mayor reusabilidad y calidad del código, así como la encapsulación
+
+----------------------------------------------------------------------------------------------------
+
+S: Principio de responsabilidad única
+Como su propio nombre indica, establece que una clase, componente o microservicio debe ser
+responsable de una sola cosa (el tan aclamado término “decoupled” en inglés). Si por el contrario,
+una clase tiene varias responsabilidades, esto implica que el cambio en una responsabilidad
+provocará la modificación en otra responsabilidad.
+
+O: Principio abierto/cerrado
+Establece que las entidades software (clases, módulos y funciones) deberían estar abiertos para
+su extensión, pero cerrados para su modificación.
+
+L: Principio de substitución de Liskov (WORKING NOT ENTENDER)
+Declara que una subclase debe ser sustituible por su superclase, y si al hacer esto, el programa
+falla, estaremos violando este principio.
+
+Cumpliendo con este principio se confirmará que nuestro programa tiene una jerarquía de clases
+fácil de entender y un código reutilizable.
+
+I: Principio de segregación de interfaz
+Este principio establece que los clientes no deberían verse forzados a depender de interfaces que no usan.
+
+Dicho de otra manera, cuando un cliente depende de una clase que implementa una interfaz cuya
+funcionalidad este cliente no usa, pero que otros clientes sí usan, este cliente estará siendo
+afectado por los cambios que fuercen otros clientes en dicha interfaz.
+
+D: Principio de inversión de dependencias
+Establece que las dependencias deben estar en las abstracciones, no en las concreciones. Es decir:
+
+Los módulos de alto nivel no deberían depender de módulos de bajo nivel. Ambos deberían depender de
+abstracciones.
+Las abstracciones no deberían depender de detalles. Los detalles deberían depender de abstracciones.
+En algún momento nuestro programa o aplicación llegará a estar formado por muchos módulos.
+Cuando esto pase, es cuando debemos usar inyección de dependencias, lo que nos permitirá controlar
+las funcionalidades desde un sitio concreto en vez de tenerlas esparcidas por todo el programa.
+Además, este aislamiento nos permitirá realizar testing mucho más fácilmente.
+
+----------------------------------------------------------------------------------------------------
+
+ABSTRACTION:
+
+class abstract:
+solo puede ser clase padre (superclase)
+las clases hijas son las que extienden a la superclase, class Perro extends Mascota
+
+Perro -> class hija
+Mascota -> class padre
+
+es util ya que permite crear metodos que no sean fijos y se les pueda dar una funcionalidad
+dependiendo la clase que los herede, ejemplo si lo hereda la clase Perro o Agula,
+ejemplo el metodo abstracto numero de patas.
+
+los metodos abstractos deben estar en clases abstractas
+
+si se extiende de una clase abstracta en una clase concreta los metodos abstractos deben ser
+implementados o sobreescritos en las clases fijas o abstractas dependiendo cual sea.
+
+una clase abstracta no puede ser instanciada (No se pueden generar objetos de esa clase)
+puede tener metodos abstractos y no abstractos
+los metodos abstractos no tienen body
+
+no podemos tener metodos abstractos en una clase concreta o normal.
+
+las clases concretas no anbstractas que hereden una clase abstracta , estan obligadas a
+implementar las funciones abstractas de la clase padre.
+
+metodos o clases concretos, son cuando no son abstractos.
+
+En una clase abstracta, se pueden tanto definir la implemetación de métodos como sólo el método
+a implementar, dejando la implementación a las clases que hereden de la clase abstracta.
+
+Se puede HEREDAR de una clase abstracta y se puede IMPLEMENTAR una o más interfaces.
+
+POLIMORFISMO:
+En una relación de tipo herencia, un objeto de la superclase puede almacenar un objeto de cualquiera
+de sus subclases, siempre y cuando sea su clase hija (que las subclases extiendan de dicha clase).
+
+podemos crear un objeto de la clase padre e inicializarlo con cualquiera de sus clases hijas.
+ejemplo:
+
+Perro() : Animal()
+Caballo() : Animal()
+
+class Animal animal = new Animal()
+animal = new Perro()
+animal = new Caballo()
+
