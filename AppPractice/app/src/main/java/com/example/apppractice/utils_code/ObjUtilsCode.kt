@@ -2,6 +2,7 @@ package com.example.apppractice.utils_code
 
 import com.google.android.gms.maps.model.LatLng
 
+// Object generic
 object ObjUtilsCode {
 
     var latMarker: LatLng? = null
