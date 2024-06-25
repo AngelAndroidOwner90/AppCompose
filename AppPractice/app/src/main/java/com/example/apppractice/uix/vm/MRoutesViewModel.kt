@@ -1,4 +1,4 @@
-package com.example.apppractice.ui.screens.vm
+package com.example.apppractice.uix.vm
 
 import android.util.Log
 import androidx.lifecycle.ViewModel

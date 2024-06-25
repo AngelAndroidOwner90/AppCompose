@@ -1,17 +1,14 @@
-package com.example.apppractice.ui.screens
+package com.example.apppractice.uix.screens
 
 import android.Manifest
 import android.content.Context
-import android.location.Geocoder
 import android.os.Build
 import android.util.Log
 import android.widget.Toast
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.PaddingValues
-import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -51,16 +48,8 @@ import androidx.core.content.ContextCompat
 import androidx.core.content.PermissionChecker
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
-import com.example.apppractice.data.MapsOrsRepository
-import com.example.apppractice.model.LogUserEntyModel
-import com.example.apppractice.ui.screens.vm.MRoutesViewModel
-import com.example.apppractice.utils_code.IGetCordMark
-import com.example.apppractice.utils_code.ObjUtilsCode
-import com.google.android.gms.maps.GoogleMap
-import com.google.android.gms.maps.model.CameraPosition
+import com.example.apppractice.uix.vm.MRoutesViewModel
 import com.google.android.gms.maps.model.LatLng
-import com.google.android.gms.maps.model.Polyline
-import com.google.android.gms.maps.model.PolylineOptions
 import com.google.maps.android.compose.GoogleMap
 import com.google.maps.android.compose.MapProperties
 import com.google.maps.android.compose.MapType
@@ -69,8 +58,6 @@ import com.google.maps.android.compose.Marker
 import com.google.maps.android.compose.MarkerState
 import com.google.maps.android.compose.Polyline
 import com.google.maps.android.compose.rememberCameraPositionState
-import java.io.IOException
-import java.util.Locale
 
 
 @OptIn(ExperimentalMaterial3Api::class)
