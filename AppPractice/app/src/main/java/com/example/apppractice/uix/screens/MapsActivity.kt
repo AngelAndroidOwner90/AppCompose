@@ -1,24 +1,16 @@
-package com.example.apppractice.ui.screens
+package com.example.apppractice.uix.screens
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.navigation.NavController
-import com.example.apppractice.ui.screens.ui.theme.AppPracticeTheme
-import com.google.android.gms.maps.GoogleMap
-import com.google.android.gms.maps.model.LatLng
+import com.example.apppractice.uix.ui.theme.AppPracticeTheme
 
 class MapsActivity : ComponentActivity() {
 

@@ -2,14 +2,12 @@ package com.example.apppractice.app_navigation
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import androidx.navigation.navArgument
-import com.example.apppractice.ui.screens.LoginUserSolid
-import com.example.apppractice.ui.screens.MenuMain
-import com.example.apppractice.ui.screens.PracticeMaps
+import com.example.apppractice.uix.screens.LoginUserSolid
+import com.example.apppractice.uix.screens.MenuMain
+import com.example.apppractice.uix.screens.PracticeMaps
 
 @Composable
 fun AppNavControl() {

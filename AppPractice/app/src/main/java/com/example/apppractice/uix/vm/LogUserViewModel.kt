@@ -1,6 +1,4 @@
-package com.example.apppractice.ui
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
+package com.example.apppractice.uix.vm
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.apppractice.data.LogUserRepository
